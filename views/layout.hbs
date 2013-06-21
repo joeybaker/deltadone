@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+</head>
+<body>
+
+  <div id="main">
+    {{{_yield}}}
+  </div>
+
+  {{#if _data}}
+    <script>
+      window._data = {{{json _data}}}
+    </script>
+  {{/if}}
+  <script src="/assets/main.min.js"></script>
+
+  {{! Google Analytics: change UA-XXXXX-X to be your site's ID. }}
+  <script>
+  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  {{#if _development}}
+    <script src="//localhost:8058/livereload.js" async defer></script>
+  {{/if}}
+</body>
+</html>
