@@ -1,0 +1,55 @@
+{
+  "name": "deltadone",
+  "version": "0.0.0",
+  "description": "Doing it",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test",
+    "start": "node index.js",
+    "predeploy": "grunt predeploy",
+    "postdeploy": "grunt postdeploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:joeybaker/deltadone.git"
+  },
+  "keywords": [],
+  "author": "Joey Baker",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-bumpx": "*",
+    "grunt-notify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-handlebars": "*",
+    "grunt-shell": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-simple-mocha": "*",
+    "grunt-contrib-less": "*",
+    "grunt-browserify": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-concurrent": "*",
+    "grunt-nodemon": "*",
+    "chai": "~1",
+    "mocha": "~1",
+    "chai-jquery": "~1"
+  },
+  "dependencies": {
+    "lodash": "~1",
+    "backbone": "~1.0",
+    "underscore.string": "~2.3",
+    "backbone-relational": "~0.8",
+    "cloudinary": "~1.0",
+    "hapi": "~1.8",
+    "cradle": "~0",
+    "handlebars": "~1",
+    "handlebars-runtime": "~1.0.12"
+  },
+  "subdomain": "uwn",
+  "engines": {
+    "node": "0.10.x"
+  }
+}

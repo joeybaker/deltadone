@@ -1,0 +1,6 @@
+{
+  "port": 8050
+  , "db": {
+    "host": "localhost"
+  }
+}

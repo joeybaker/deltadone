@@ -1,0 +1,27 @@
+{
+  "name": "deltadone",
+  "version": "0.0.0",
+  "main": [
+    "assets/js/main.js"
+  ],
+  "description": "",
+  "homepage": "",
+  "license": [],
+  "keywords": [],
+  "author": {
+    "name": "Joey Baker",
+    "web": "http://joeybaker.github.com"
+  },
+  "dependencies": {
+    "bootstrap": "~2",
+    "jquery": "~2",
+    "lodash": "~1",
+    "handlebars": "~1",
+    "fastclick": "*",
+    "animate.less": "git@github.com:machito/animate.less.git",
+    "Flexbox.less": "git@github.com:ProLoser/Flexbox.less.git",
+    "font-awesome": "*",
+    "html5sortable": "farhadi/html5sortable"
+  },
+  "devDependencies": {}
+}
