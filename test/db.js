@@ -120,7 +120,6 @@ describe('db', function(){
           testers.fetch({
             reset: true
             , success: function(collection){
-
               collection.findWhere({name: 'fetch test'}).get('name').should.equal('fetch test')
               done()
             }
@@ -132,6 +131,13 @@ describe('db', function(){
           })
         }
       })
+    })
+    it('triggers a sync event on fetch', function(done){
+      testers.on('sync', function(collection, res){
+        res.should.exist
+        done()
+      })
+      testers.fetch()
     })
   })
 

@@ -178,5 +178,7 @@ module.exports = function(hapiServer, opts, cb){
   getId = options.getId
 
   Backbone.sync = sync
+  // kill ajax, since we don't need it
+  Backbone.ajax = function(){}
   return db
 }

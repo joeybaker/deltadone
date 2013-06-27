@@ -35,7 +35,8 @@
     "grunt-nodemon": "*",
     "chai": "~1",
     "mocha": "~1",
-    "chai-jquery": "~1"
+    "chai-jquery": "~1",
+    "request": "~2"
   },
   "dependencies": {
     "lodash": "~1",
